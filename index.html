@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<!--
+    Projeto: Vida Sustentável
+    Disciplina: Desenvolvimento Front-End para Web (DFEW.08) - Universidade Positivo
+    Equipe: Rafaela de Souza Tavares e Gabriele Derevetski Pereira
+    Arquivo: index.html
+    Descrição: página inicial do site, com apresentação, dica do dia e atalhos para os temas.
+-->
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Site educativo com dicas de reciclagem, energia, água e consumo consciente.">
+    <title>Início | Vida Sustentável</title>
+    <link rel="icon" type="image/svg+xml" href="img/logo.svg">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/fontes.css">
+    <link rel="stylesheet" href="css/estilo.css">
+    <style>
+        #hero {
+            min-height: 560px;
+        }
+
+        #hero h1 {
+            text-shadow: 0 2px 14px rgba(12, 43, 36, 0.45);
+        }
+    </style>
+</head>
+<body>
+    <a class="pular-conteudo" href="#conteudo">Pular para o conteúdo</a>
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-vida sticky-top" aria-label="Menu principal">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img class="logo-menu" src="img/logo.svg" alt="Logotipo Vida Sustentável">
+                <span>Vida Sustentável</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menuPrincipal">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link active" href="index.html" aria-current="page">Início</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Temas</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="reciclagem.html">Reciclagem</a></li>
+                            <li><a class="dropdown-item" href="energia.html">Energia</a></li>
+                            <li><a class="dropdown-item" href="agua.html">Água</a></li>
+                            <li><a class="dropdown-item" href="consumo.html">Consumo consciente</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="galeria.html">Galeria</a></li>
+                    <li class="nav-item"><a class="nav-link" href="midia.html">Mídia</a></li>
+                    <li class="nav-item"><a class="nav-link" href="checklist.html">Checklist</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://brasil.un.org/pt-br/sdgs" target="_blank" rel="noopener noreferrer">ODS (ONU) &#8599;</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main id="conteudo">
+        <section class="hero" id="hero" aria-labelledby="titulo-hero">
+            <div class="container">
+                <h1 id="titulo-hero">Vida Sustentável</h1>
+                <p class="subtitulo" style="max-width: 460px;">Pequenas atitudes do dia a dia que cuidam do planeta e também do seu bolso.</p>
+                <div class="acoes-hero">
+                    <a class="btn btn-light btn-lg" href="checklist.html">Montar meu checklist</a>
+                    <a class="btn btn-outline-light btn-lg" href="sobre.html">Conhecer o projeto</a>
+                </div>
+            </div>
+        </section>
+        <div class="container pb-4">
+        <section class="secao" aria-labelledby="titulo-dica">
+            <div class="caixa-dica">
+                <h2 id="titulo-dica" class="h4">Dica sustentável do dia</h2>
+                <p id="dica-texto" class="fs-5 mb-3">Carregando dica...</p>
+                <button class="btn btn-success" id="botao-dica" type="button">Mostrar outra dica</button>
+            </div>
+        </section>
+
+        <section class="secao" aria-labelledby="titulo-temas">
+            <h2 id="titulo-temas">Escolha um tema</h2>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+                <div class="col">
+                    <article class="card cartao-tema tema-reciclagem-cor">
+                        <img src="img/reciclagem.svg" class="card-img-top" alt="Lixeira verde com símbolo de reciclagem">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title h5">Reciclagem</h3>
+                            <p class="card-text">Aprenda a separar o lixo e descubra quanto tempo cada material leva para se decompor.</p>
+                            <a href="reciclagem.html" class="btn btn-success mt-auto">Explorar</a>
+                        </div>
+                    </article>
+                </div>
+                <div class="col">
+                    <article class="card cartao-tema tema-energia-cor">
+                        <img src="img/energia.svg" class="card-img-top" alt="Lâmpada acesa com raios de luz">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title h5">Energia</h3>
+                            <p class="card-text">Calcule o consumo dos aparelhos e veja quanto a troca por LED pode economizar.</p>
+                            <a href="energia.html" class="btn btn-success mt-auto">Explorar</a>
+                        </div>
+                    </article>
+                </div>
+                <div class="col">
+                    <article class="card cartao-tema tema-agua-cor">
+                        <img src="img/agua.svg" class="card-img-top" alt="Gota de água azul">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title h5">Água</h3>
+                            <p class="card-text">Descubra quantos litros você usa por dia e pequenas mudanças que fazem diferença.</p>
+                            <a href="agua.html" class="btn btn-success mt-auto">Explorar</a>
+                        </div>
+                    </article>
+                </div>
+                <div class="col">
+                    <article class="card cartao-tema tema-consumo-cor">
+                        <img src="img/horta.svg" class="card-img-top" alt="Planta crescendo em uma horta">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title h5">Consumo consciente</h3>
+                            <p class="card-text">Conheça os 5 Rs e meça sua pegada ecológica de forma simples.</p>
+                            <a href="consumo.html" class="btn btn-success mt-auto">Explorar</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="secao" aria-labelledby="titulo-ods">
+            <h2 id="titulo-ods">Ligado aos Objetivos de Desenvolvimento Sustentável</h2>
+            <div class="row g-3">
+                <div class="col-6 col-lg-3"><div class="bloco-midia ods ods-6 h-100"><span class="destaque-numero">ODS 6</span>Água potável e saneamento</div></div>
+                <div class="col-6 col-lg-3"><div class="bloco-midia ods ods-7 h-100"><span class="destaque-numero">ODS 7</span>Energia limpa e acessível</div></div>
+                <div class="col-6 col-lg-3"><div class="bloco-midia ods ods-12 h-100"><span class="destaque-numero">ODS 12</span>Consumo e produção responsáveis</div></div>
+                <div class="col-6 col-lg-3"><div class="bloco-midia ods ods-13 h-100"><span class="destaque-numero">ODS 13</span>Ação contra a mudança global do clima</div></div>
+            </div>
+            <p class="mt-3">Saiba mais no site oficial das <a href="https://brasil.un.org/pt-br/sdgs" target="_blank" rel="noopener noreferrer">Nações Unidas no Brasil</a>.</p>
+        </section>
+
+        <div class="alert alert-success mt-4" role="alert">
+            <strong>Novidade:</strong> seus hábitos ficam salvos no navegador. Visite o <a class="alert-link" href="checklist.html">checklist</a> e acompanhe seu progresso todos os dias.
+        </div>
+        </div>
+    </main>
+    <footer class="rodape">
+        <div class="colunas">
+            <div>
+                <h2>Vida Sustentável</h2>
+                <p>Site educativo sobre hábitos sustentáveis para o dia a dia, criado como projeto da disciplina Desenvolvimento Front-End para Web.</p>
+            </div>
+            <div>
+                <h2>Navegue</h2>
+                <ul>
+                    <li><a href="reciclagem.html">Reciclagem</a></li>
+                    <li><a href="energia.html">Energia</a></li>
+                    <li><a href="agua.html">Água</a></li>
+                    <li><a href="consumo.html">Consumo consciente</a></li>
+                    <li><a href="checklist.html">Checklist de hábitos</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2>Projeto</h2>
+                <p>Rafaela de Souza Tavares<br>Gabriele Derevetski Pereira<br>Análise e Desenvolvimento de Sistemas<br>Universidade Positivo</p>
+                <p><a href="https://www.w3.org/" target="_blank" rel="noopener noreferrer">W3C</a> | <a href="https://developer.mozilla.org/pt-BR/" target="_blank" rel="noopener noreferrer">MDN Web Docs</a></p>
+            </div>
+        </div>
+        <p class="direitos">&copy; <span id="ano-atual">2026</span> Vida Sustentável. Projeto acadêmico sem fins comerciais.</p>
+    </footer>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/principal.js"></script>
+</body>
+</html>

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<!--
+    Projeto: Vida Sustentável
+    Disciplina: Desenvolvimento Front-End para Web (DFEW.08) - Universidade Positivo
+    Equipe: Rafaela de Souza Tavares e Gabriele Derevetski Pereira
+    Arquivo: agua.html
+    Descrição: página de água com explicação, tabela de economia e calculadora de consumo diário.
+-->
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Descubra quanto você consome de água e como economizar no dia a dia.">
+    <title>Água | Vida Sustentável</title>
+    <link rel="icon" type="image/svg+xml" href="img/logo.svg">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/fontes.css">
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body class="tema-agua">
+    <a class="pular-conteudo" href="#conteudo">Pular para o conteúdo</a>
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-vida sticky-top" aria-label="Menu principal">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img class="logo-menu" src="img/logo.svg" alt="Logotipo Vida Sustentável">
+                <span>Vida Sustentável</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menuPrincipal">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Temas</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="reciclagem.html">Reciclagem</a></li>
+                            <li><a class="dropdown-item" href="energia.html">Energia</a></li>
+                            <li><a class="dropdown-item active" href="agua.html">Água</a></li>
+                            <li><a class="dropdown-item" href="consumo.html">Consumo consciente</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="galeria.html">Galeria</a></li>
+                    <li class="nav-item"><a class="nav-link" href="midia.html">Mídia</a></li>
+                    <li class="nav-item"><a class="nav-link" href="checklist.html">Checklist</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://brasil.un.org/pt-br/sdgs" target="_blank" rel="noopener noreferrer">ODS (ONU) &#8599;</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main id="conteudo" class="container pb-4">
+        <header class="cabecalho-pagina">
+            <div>
+                <h1>Água</h1>
+                <p>Pequenos gestos economizam centenas de litros por mês.</p>
+            </div>
+            <img class="selo" src="img/agua.svg" alt="Gota de água">
+        </header>
+
+        <section class="secao" aria-labelledby="titulo-agua-intro">
+            <h2 id="titulo-agua-intro">Por que economizar</h2>
+            <div class="row g-4 align-items-center">
+                <div class="col-md-7">
+                    <p>A água potável é um recurso limitado e seu tratamento e transporte também consomem energia. Reduzir o desperdício no banho, na cozinha e na limpeza ajuda a preservar os mananciais e diminui a conta no fim do mês.</p>
+                    <p>Uma alternativa é captar a água da chuva em um reservatório e usá-la para lavar calçadas, regar plantas e abastecer descargas.</p>
+                </div>
+                <div class="col-md-5">
+                    <img class="img-fluid rounded-4 shadow" src="img/chuva.svg" alt="Nuvem com chuva caindo em um reservatório">
+                </div>
+            </div>
+        </section>
+
+        <section class="secao" aria-labelledby="titulo-tabela-agua">
+            <h2 id="titulo-tabela-agua">Hábito comum x hábito econômico</h2>
+            <div class="table-responsive tabela-vida">
+                <table class="table table-hover align-middle mb-0">
+                    <caption class="p-3">Valores aproximados de referência usados em campanhas de uso consciente da água.</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Atividade</th>
+                            <th scope="col">Hábito comum</th>
+                            <th scope="col">Hábito econômico</th>
+                            <th scope="col">Economia aproximada</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><th scope="row">Banho</th><td>15 min: 135 L</td><td>5 min: 45 L</td><td>90 L</td></tr>
+                        <tr><th scope="row">Escovar os dentes</th><td>Torneira aberta: 12 L</td><td>Torneira fechada: 1 L</td><td>11 L</td></tr>
+                        <tr><th scope="row">Lavar a louça</th><td>Torneira aberta: 117 L</td><td>Torneira fechada ao ensaboar: 20 L</td><td>97 L</td></tr>
+                        <tr><th scope="row">Lavar o carro</th><td>Mangueira: 216 L</td><td>Balde: 40 L</td><td>176 L</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="secao" aria-labelledby="titulo-calc-agua">
+            <h2 id="titulo-calc-agua">Quanta água você usa por dia?</h2>
+            <form class="formulario-vida" id="form-agua">
+                <div class="row g-3">
+                    <div class="col-md-6">
+                        <label for="minutos-banho" class="form-label">Minutos de banho</label>
+                        <input type="number" class="form-control" id="minutos-banho" min="1" max="60" placeholder="Ex.: 10" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="vazao-chuveiro" class="form-label">Tipo de chuveiro</label>
+                        <select class="form-select" id="vazao-chuveiro" required>
+                            <option value="6">Econômico (cerca de 6 L/min)</option>
+                            <option value="9" selected>Comum (cerca de 9 L/min)</option>
+                            <option value="12">Alta vazão (cerca de 12 L/min)</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="descargas-dia" class="form-label">Descargas por dia</label>
+                        <input type="number" class="form-control" id="descargas-dia" min="0" max="30" placeholder="Ex.: 5" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="litros-descarga" class="form-label">Tipo de descarga</label>
+                        <select class="form-select" id="litros-descarga" required>
+                            <option value="6">Caixa acoplada (cerca de 6 L)</option>
+                            <option value="10" selected>Comum (cerca de 10 L)</option>
+                            <option value="15">Válvula antiga (cerca de 15 L)</option>
+                        </select>
+                    </div>
+                    <div class="col-12">
+                        <label for="minutos-dentes" class="form-label">Minutos com a torneira aberta ao escovar os dentes (por dia)</label>
+                        <input type="number" class="form-control" id="minutos-dentes" min="0" max="30" placeholder="Ex.: 3" required>
+                        <div class="form-text">Considera uma torneira aberta com cerca de 2 litros por minuto.</div>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-success mt-3">Calcular</button>
+                <div id="resultado-agua" role="status" aria-live="polite"></div>
+            </form>
+        </section>
+    </main>
+    <footer class="rodape">
+        <div class="colunas">
+            <div>
+                <h2>Vida Sustentável</h2>
+                <p>Site educativo sobre hábitos sustentáveis para o dia a dia, criado como projeto da disciplina Desenvolvimento Front-End para Web.</p>
+            </div>
+            <div>
+                <h2>Navegue</h2>
+                <ul>
+                    <li><a href="reciclagem.html">Reciclagem</a></li>
+                    <li><a href="energia.html">Energia</a></li>
+                    <li><a href="agua.html">Água</a></li>
+                    <li><a href="consumo.html">Consumo consciente</a></li>
+                    <li><a href="checklist.html">Checklist de hábitos</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2>Projeto</h2>
+                <p>Rafaela de Souza Tavares<br>Gabriele Derevetski Pereira<br>Análise e Desenvolvimento de Sistemas<br>Universidade Positivo</p>
+                <p><a href="https://www.w3.org/" target="_blank" rel="noopener noreferrer">W3C</a> | <a href="https://developer.mozilla.org/pt-BR/" target="_blank" rel="noopener noreferrer">MDN Web Docs</a></p>
+            </div>
+        </div>
+        <p class="direitos">&copy; <span id="ano-atual">2026</span> Vida Sustentável. Projeto acadêmico sem fins comerciais.</p>
+    </footer>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/principal.js"></script>
+    <script src="js/calculadoras.js"></script>
+</body>
+</html>

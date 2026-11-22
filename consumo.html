@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<!--
+    Projeto: Vida Sustentável
+    Disciplina: Desenvolvimento Front-End para Web (DFEW.08) - Universidade Positivo
+    Equipe: Rafaela de Souza Tavares e Gabriele Derevetski Pereira
+    Arquivo: consumo.html
+    Descrição: página de consumo consciente com os 5 Rs, ideias e questionário de pegada.
+-->
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Conheça os 5 Rs e faça um teste de pegada ecológica simplificada.">
+    <title>Consumo consciente | Vida Sustentável</title>
+    <link rel="icon" type="image/svg+xml" href="img/logo.svg">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/fontes.css">
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body class="tema-consumo">
+    <a class="pular-conteudo" href="#conteudo">Pular para o conteúdo</a>
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-vida sticky-top" aria-label="Menu principal">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img class="logo-menu" src="img/logo.svg" alt="Logotipo Vida Sustentável">
+                <span>Vida Sustentável</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menuPrincipal">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Temas</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="reciclagem.html">Reciclagem</a></li>
+                            <li><a class="dropdown-item" href="energia.html">Energia</a></li>
+                            <li><a class="dropdown-item" href="agua.html">Água</a></li>
+                            <li><a class="dropdown-item active" href="consumo.html">Consumo consciente</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="galeria.html">Galeria</a></li>
+                    <li class="nav-item"><a class="nav-link" href="midia.html">Mídia</a></li>
+                    <li class="nav-item"><a class="nav-link" href="checklist.html">Checklist</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://brasil.un.org/pt-br/sdgs" target="_blank" rel="noopener noreferrer">ODS (ONU) &#8599;</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main id="conteudo" class="container pb-4">
+        <header class="cabecalho-pagina">
+            <div>
+                <h1>Consumo consciente</h1>
+                <p>Consumir melhor é consumir menos, reaproveitar mais e escolher com atenção.</p>
+            </div>
+            <img class="selo" src="img/bike.svg" alt="Bicicleta com uma planta na cesta">
+        </header>
+
+        <section class="secao" aria-labelledby="titulo-5rs">
+            <h2 id="titulo-5rs">Os 5 Rs da sustentabilidade</h2>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-5 g-3">
+                <div class="col"><div class="bloco-midia h-100"><span class="destaque-numero fs-4">Repensar</span>Questione se você realmente precisa daquilo antes de comprar.</div></div>
+                <div class="col"><div class="bloco-midia h-100"><span class="destaque-numero fs-4">Recusar</span>Diga não ao que é descartável ou desnecessário.</div></div>
+                <div class="col"><div class="bloco-midia h-100"><span class="destaque-numero fs-4">Reduzir</span>Diminua a quantidade de lixo e de recursos usados.</div></div>
+                <div class="col"><div class="bloco-midia h-100"><span class="destaque-numero fs-4">Reutilizar</span>Dê novos usos a potes, roupas, caixas e móveis.</div></div>
+                <div class="col"><div class="bloco-midia h-100"><span class="destaque-numero fs-4">Reciclar</span>Encaminhe corretamente o que não tem mais uso.</div></div>
+            </div>
+        </section>
+
+        <section class="secao" aria-labelledby="titulo-ideias">
+            <h2 id="titulo-ideias">Ideias para o dia a dia</h2>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <article class="card cartao-tema">
+                        <img src="img/bike.svg" class="card-img-top" alt="Bicicleta">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title h5">Mobilidade ativa</h3>
+                            <p class="card-text">Trajetos curtos a pé ou de bicicleta poluem menos e fazem bem à saúde.</p>
+                            <a class="btn btn-outline-success mt-auto" href="checklist.html">Incluir no checklist</a>
+                        </div>
+                    </article>
+                </div>
+                <div class="col">
+                    <article class="card cartao-tema">
+                        <img src="img/horta.svg" class="card-img-top" alt="Horta com plantas e legumes">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title h5">Horta e compostagem</h3>
+                            <p class="card-text">Cultive temperos em vasos e transforme restos de alimentos em adubo.</p>
+                            <a class="btn btn-outline-success mt-auto" href="galeria.html">Ver na galeria</a>
+                        </div>
+                    </article>
+                </div>
+                <div class="col">
+                    <article class="card cartao-tema">
+                        <img src="img/arvore.svg" class="card-img-top" alt="Árvore frondosa">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title h5">Compras conscientes</h3>
+                            <p class="card-text">Prefira produtos duráveis, locais e com menos embalagem.</p>
+                            <a class="btn btn-outline-success mt-auto" href="contato.html">Enviar uma sugestão</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="secao" aria-labelledby="titulo-pegada">
+            <h2 id="titulo-pegada">Sua pegada ecológica simplificada</h2>
+            <p>Responda às perguntas abaixo. Este teste é apenas educativo e não substitui medições científicas.</p>
+            <form class="formulario-vida" id="form-pegada">
+                <div id="perguntas-pegada"></div>
+                <button type="submit" class="btn btn-success">Ver resultado</button>
+                <div id="resultado-pegada" role="status" aria-live="polite"></div>
+            </form>
+        </section>
+    </main>
+    <footer class="rodape">
+        <div class="colunas">
+            <div>
+                <h2>Vida Sustentável</h2>
+                <p>Site educativo sobre hábitos sustentáveis para o dia a dia, criado como projeto da disciplina Desenvolvimento Front-End para Web.</p>
+            </div>
+            <div>
+                <h2>Navegue</h2>
+                <ul>
+                    <li><a href="reciclagem.html">Reciclagem</a></li>
+                    <li><a href="energia.html">Energia</a></li>
+                    <li><a href="agua.html">Água</a></li>
+                    <li><a href="consumo.html">Consumo consciente</a></li>
+                    <li><a href="checklist.html">Checklist de hábitos</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2>Projeto</h2>
+                <p>Rafaela de Souza Tavares<br>Gabriele Derevetski Pereira<br>Análise e Desenvolvimento de Sistemas<br>Universidade Positivo</p>
+                <p><a href="https://www.w3.org/" target="_blank" rel="noopener noreferrer">W3C</a> | <a href="https://developer.mozilla.org/pt-BR/" target="_blank" rel="noopener noreferrer">MDN Web Docs</a></p>
+            </div>
+        </div>
+        <p class="direitos">&copy; <span id="ano-atual">2026</span> Vida Sustentável. Projeto acadêmico sem fins comerciais.</p>
+    </footer>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/principal.js"></script>
+    <script src="js/consumo.js"></script>
+</body>
+</html>

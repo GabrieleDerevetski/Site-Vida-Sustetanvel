@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<!--
+    Projeto: Vida Sustentável
+    Disciplina: Desenvolvimento Front-End para Web (DFEW.08) - Universidade Positivo
+    Equipe: Rafaela de Souza Tavares e Gabriele Derevetski Pereira
+    Arquivo: midia.html
+    Descrição: player de vídeo e reprodutor de áudio com controles nativos (HTML, CSS e JavaScript puros).
+-->
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Vídeo e áudio do projeto Vida Sustentável com controles nativos.">
+    <title>Mídia | Vida Sustentável</title>
+    <link rel="icon" type="image/svg+xml" href="img/logo.svg">
+    <link rel="stylesheet" href="css/fontes.css">
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+    <a class="pular-conteudo" href="#conteudo">Pular para o conteúdo</a>
+    <nav class="menu-puro" aria-label="Menu principal">
+        <div class="barra">
+            <a class="marca" href="index.html">
+                <img src="img/logo.svg" width="40" height="40" alt="Logotipo Vida Sustentável">
+                <span>Vida Sustentável</span>
+            </a>
+            <button class="botao-menu" id="botao-menu" type="button" aria-controls="lista-menu" aria-expanded="false" aria-label="Abrir menu">&#9776;</button>
+            <ul class="lista-menu" id="lista-menu">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li class="tem-submenu">
+                    <a href="reciclagem.html">Temas &#9662;</a>
+                    <ul class="submenu">
+                            <li><a href="reciclagem.html">Reciclagem</a></li>
+                            <li><a href="energia.html">Energia</a></li>
+                            <li><a href="agua.html">Água</a></li>
+                            <li><a href="consumo.html">Consumo consciente</a></li>
+                    </ul>
+                </li>
+                <li><a href="galeria.html">Galeria</a></li>
+                <li><a href="midia.html" aria-current="page">Mídia</a></li>
+                <li><a href="checklist.html">Checklist</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="https://brasil.un.org/pt-br/sdgs" target="_blank" rel="noopener noreferrer">ODS (ONU) &#8599;</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main id="conteudo" class="container-puro">
+        <header class="cabecalho-pagina">
+            <h1>Mídia</h1>
+            <p>Assista ao vídeo e ouça o áudio relaxante do projeto.</p>
+        </header>
+
+        <section aria-labelledby="titulo-video">
+            <h2 id="titulo-video">Vídeo</h2>
+            <div class="grade-midia">
+                <div class="bloco-midia">
+                    <video id="video-principal" controls preload="metadata" poster="img/poster-video.jpg">
+                        <source src="video/vida-sustentavel.mp4" type="video/mp4">
+                        Seu navegador não oferece suporte ao elemento de vídeo.
+                    </video>
+                    <p id="duracao-video" style="margin: 0.5rem 0 0;">Duração: carregando...</p>
+                </div>
+                <div class="bloco-midia">
+                    <h3>Controle de velocidade</h3>
+                    <div class="filtros">
+                        <button type="button" class="botao-puro" data-velocidade="0.5">0,5x</button>
+                        <button type="button" class="botao-puro ativo" data-velocidade="1">1x</button>
+                        <button type="button" class="botao-puro" data-velocidade="1.5">1,5x</button>
+                        <button type="button" class="botao-puro" data-velocidade="2">2x</button>
+                    </div>
+                    <p id="estado-velocidade" role="status">Velocidade atual do vídeo: 1x</p>
+                    <p>O vídeo apresenta o nome do projeto com uma animação em tons de verde e a frase "Pequenas atitudes, grande impacto".</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="secao" aria-labelledby="titulo-audio">
+            <h2 id="titulo-audio">Áudio</h2>
+            <div class="bloco-midia">
+                <p>Uma melodia suave para acompanhar a leitura ou a meditação.</p>
+                <audio id="audio-principal" controls preload="metadata">
+                    <source src="audio/som-da-natureza.mp3" type="audio/mpeg">
+                    Seu navegador não oferece suporte ao elemento de áudio.
+                </audio>
+                <p id="duracao-audio" style="margin: 0.5rem 0;">Duração: carregando...</p>
+                <label for="repetir-audio">
+                    <input type="checkbox" id="repetir-audio"> Repetir áudio automaticamente
+                </label>
+            </div>
+        </section>
+    </main>
+    <footer class="rodape">
+        <div class="colunas">
+            <div>
+                <h2>Vida Sustentável</h2>
+                <p>Site educativo sobre hábitos sustentáveis para o dia a dia, criado como projeto da disciplina Desenvolvimento Front-End para Web.</p>
+            </div>
+            <div>
+                <h2>Navegue</h2>
+                <ul>
+                    <li><a href="reciclagem.html">Reciclagem</a></li>
+                    <li><a href="energia.html">Energia</a></li>
+                    <li><a href="agua.html">Água</a></li>
+                    <li><a href="consumo.html">Consumo consciente</a></li>
+                    <li><a href="checklist.html">Checklist de hábitos</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2>Projeto</h2>
+                <p>Rafaela de Souza Tavares<br>Gabriele Derevetski Pereira<br>Análise e Desenvolvimento de Sistemas<br>Universidade Positivo</p>
+                <p><a href="https://www.w3.org/" target="_blank" rel="noopener noreferrer">W3C</a> | <a href="https://developer.mozilla.org/pt-BR/" target="_blank" rel="noopener noreferrer">MDN Web Docs</a></p>
+            </div>
+        </div>
+        <p class="direitos">&copy; <span id="ano-atual">2026</span> Vida Sustentável. Projeto acadêmico sem fins comerciais.</p>
+    </footer>
+    <script src="js/principal.js"></script>
+    <script src="js/midia.js"></script>
+</body>
+</html>

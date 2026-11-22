@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-label="Planeta Terra com continentes verdes e nuvens">
+  <rect width="800" height="600" fill="#123d33"/>
+  <g fill="#f3f6f1"><circle cx="110" cy="100" r="5"/><circle cx="690" cy="80" r="4"/><circle cx="700" cy="500" r="6"/><circle cx="90" cy="490" r="4"/><circle cx="250" cy="45" r="3"/><circle cx="560" cy="555" r="3"/><circle cx="740" cy="300" r="3"/><circle cx="55" cy="300" r="3"/></g>
+  <circle cx="400" cy="300" r="250" fill="#1d5fa8" opacity=".25"/>
+  <circle cx="400" cy="300" r="205" fill="#2d7bd0"/>
+  <path d="M400 95 a205 205 0 0 1 0 410 C470 400 470 200 400 95 Z" fill="#1d5fa8"/>
+  <g fill="#6fcf8a">
+    <path d="M290 190 C340 150 405 168 415 215 C425 262 365 280 340 322 C300 350 252 292 290 190 Z"/>
+    <path d="M455 340 C505 308 565 340 553 396 C540 450 480 462 452 428 C428 396 428 358 455 340 Z"/>
+    <path d="M470 170 C505 155 535 172 525 200 C510 222 470 212 470 170 Z"/>
+  </g>
+  <g fill="#2f9e5e"><path d="M318 215 C345 195 380 205 385 230 C355 245 335 250 318 215 Z"/><path d="M480 380 C505 366 530 380 525 405 C505 418 487 410 480 380 Z"/></g>
+  <g fill="#fff" opacity=".95">
+    <rect x="235" y="380" width="120" height="30" rx="15"/><circle cx="270" cy="378" r="22"/>
+    <rect x="445" y="225" width="100" height="26" rx="13"/><circle cx="485" cy="224" r="18"/>
+  </g>
+  <ellipse cx="400" cy="300" rx="320" ry="70" fill="none" stroke="#f2b705" stroke-width="7" stroke-dasharray="3 16" stroke-linecap="round" transform="rotate(-18 400 300)"/>
+  <circle cx="663" cy="205" r="18" fill="#f2b705"/>
+</svg>

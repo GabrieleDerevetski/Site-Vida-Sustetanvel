@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-label="Uma gota de água formando ondas">
+  <rect width="800" height="600" fill="#cfe6f8"/>
+  <circle cx="400" cy="300" r="240" fill="#a9d0f2"/>
+  <ellipse cx="400" cy="470" rx="300" ry="62" fill="none" stroke="#fff" stroke-width="10" opacity=".9"/>
+  <ellipse cx="400" cy="470" rx="205" ry="40" fill="none" stroke="#fff" stroke-width="10" opacity=".9"/>
+  <path d="M400 60 C400 60 245 250 245 365 C245 450 314 515 400 515 C486 515 555 450 555 365 C555 250 400 60 400 60 Z" fill="#1d5fa8"/>
+  <path d="M400 60 C400 60 555 250 555 365 C555 450 486 515 400 515 C440 470 440 330 400 60 Z" fill="#164a85"/>
+  <path d="M312 372 C312 425 345 462 392 470" fill="none" stroke="#a9d0f2" stroke-width="18" stroke-linecap="round"/>
+  <circle cx="300" cy="300" r="12" fill="#a9d0f2"/>
+  <path d="M130 140 C130 140 105 172 105 190 a25 25 0 0 0 50 0 C155 172 130 140 130 140 Z" fill="#1d5fa8"/>
+  <path d="M672 215 C672 215 652 240 652 254 a20 20 0 0 0 40 0 C692 240 672 215 672 215 Z" fill="#2d7bd0"/>
+  <path d="M645 78 C645 78 630 98 630 108 a15 15 0 0 0 30 0 C660 98 645 78 645 78 Z" fill="#1d5fa8"/>
+  <path d="M0 540 C120 510 220 560 340 540 C460 520 560 565 680 540 C740 530 780 540 800 545 V600 H0 Z" fill="#1d5fa8"/>
+  <path d="M0 575 C140 555 240 590 380 570 C520 550 640 590 800 565 V600 H0 Z" fill="#164a85"/>
+</svg>

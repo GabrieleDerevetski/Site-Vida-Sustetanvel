@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-label="Canteiro de horta com alface, tomate e cenouras">
+  <rect width="800" height="600" fill="#e2f0c4"/>
+  <circle cx="640" cy="130" r="70" fill="#f2b705"/>
+  <circle cx="640" cy="130" r="48" fill="#ffd34d"/>
+  <path d="M0 330 C150 270 300 300 450 330 C600 360 700 320 800 300 V600 H0 Z" fill="#bfe3c8"/>
+  <path d="M60 400 H740 L710 560 H90 Z" fill="#6b4a2f"/>
+  <path d="M60 400 H740 L735 430 H65 Z" fill="#8a6240"/>
+  <path d="M60 400 H740" stroke="#4b3220" stroke-width="10"/>
+  <rect x="90" y="540" width="620" height="20" fill="#4b3220"/>
+  <g transform="translate(170 400)">
+    <ellipse cx="0" cy="-30" rx="78" ry="50" fill="#4fb36b"/>
+    <ellipse cx="-30" cy="-50" rx="52" ry="40" fill="#6fcf8a"/>
+    <ellipse cx="32" cy="-44" rx="48" ry="38" fill="#2f9e5e"/>
+    <ellipse cx="0" cy="-62" rx="34" ry="28" fill="#9be3b0"/>
+  </g>
+  <g transform="translate(400 400)">
+    <rect x="-5" y="-250" width="10" height="250" fill="#8a6240"/>
+    <path d="M0 -120 C-60 -130 -80 -170 -70 -210 C-20 -200 0 -170 0 -120 Z" fill="#2f9e5e"/>
+    <path d="M0 -170 C60 -180 85 -215 78 -255 C25 -245 0 -215 0 -170 Z" fill="#4fb36b"/>
+    <path d="M0 -60 C60 -70 82 -100 76 -138 C25 -130 0 -105 0 -60 Z" fill="#1f7a4d"/>
+    <circle cx="-38" cy="-80" r="26" fill="#d64533"/>
+    <circle cx="-38" cy="-80" r="9" fill="#ef6450"/>
+    <circle cx="40" cy="-196" r="22" fill="#d64533"/>
+    <circle cx="48" cy="-30" r="24" fill="#e8782a"/>
+  </g>
+  <g transform="translate(620 400)">
+    <path d="M-50 -10 C-60 -70 -40 -100 -30 -100 C-24 -100 -18 -80 -14 -10 Z" fill="#2f9e5e"/>
+    <path d="M0 -10 C-6 -80 4 -120 12 -120 C20 -120 28 -80 24 -10 Z" fill="#4fb36b"/>
+    <path d="M40 -10 C36 -60 50 -85 58 -85 C64 -85 70 -60 74 -10 Z" fill="#2f9e5e"/>
+    <path d="M-52 -8 H-12 L-32 60 Z" fill="#e8782a"/>
+    <path d="M-2 -8 H26 L12 70 Z" fill="#e8782a"/>
+    <path d="M38 -8 H76 L58 56 Z" fill="#e8782a"/>
+  </g>
+</svg>

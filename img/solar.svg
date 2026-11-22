@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-label="Casa com painéis solares no telhado sob o sol">
+  <rect width="800" height="600" fill="#bfe0f7"/>
+  <g stroke="#f2b705" stroke-width="14" stroke-linecap="round">
+    <path d="M640 40 V14"/><path d="M728 82 L748 62"/><path d="M552 82 L532 62"/><path d="M764 168 H790"/><path d="M516 168 H490"/>
+  </g>
+  <circle cx="640" cy="168" r="82" fill="#f2b705"/>
+  <circle cx="640" cy="168" r="58" fill="#ffd34d"/>
+  <path d="M0 430 C140 370 280 390 420 430 C560 470 680 400 800 420 V600 H0 Z" fill="#6fcf8a"/>
+  <path d="M0 500 C160 450 320 480 480 510 C620 535 720 500 800 510 V600 H0 Z" fill="#2f9e5e"/>
+  <rect x="150" y="320" width="400" height="200" fill="#f3f6f1"/>
+  <rect x="150" y="320" width="60" height="200" fill="#e1e8de"/>
+  <polygon points="110,325 350,150 590,325" fill="#123d33"/>
+  <polygon points="262,248 384,160 508,248 392,248" fill="#1d5fa8" stroke="#a9d0f2" stroke-width="5" stroke-linejoin="round"/>
+  <polygon points="262,248 392,248 384,160" fill="#2d7bd0"/>
+  <g stroke="#a9d0f2" stroke-width="4"><path d="M300 220 H460"/><path d="M330 190 L470 232" opacity=".0"/><path d="M345 192 V248"/><path d="M416 190 V248"/></g>
+  <rect x="150" y="318" width="440" height="14" rx="7" fill="#0b2a22"/>
+  <rect x="215" y="380" width="90" height="80" rx="6" fill="#bfe0f7" stroke="#123d33" stroke-width="9"/>
+  <path d="M260 380 V460 M215 420 H305" stroke="#123d33" stroke-width="6"/>
+  <rect x="380" y="395" width="80" height="125" rx="6" fill="#d64533"/>
+  <circle cx="446" cy="462" r="6" fill="#f2b705"/>
+  <rect x="490" y="395" width="40" height="40" rx="5" fill="#bfe0f7" stroke="#123d33" stroke-width="7"/>
+  <circle cx="110" cy="505" r="38" fill="#1f7a4d"/><circle cx="145" cy="515" r="30" fill="#2f9e5e"/>
+  <circle cx="660" cy="515" r="44" fill="#1f7a4d"/><circle cx="700" cy="528" r="32" fill="#2f9e5e"/>
+</svg>

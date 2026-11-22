@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 700" preserveAspectRatio="xMaxYMax slice" role="img" aria-label="Paisagem sustentável ao amanhecer, com casa de painel solar, turbina eólica e árvores">
+  <rect width="1600" height="700" fill="#123d33"/>
+  <circle cx="1180" cy="400" r="330" fill="#1b5444"/>
+  <circle cx="1180" cy="400" r="235" fill="#f2b705" opacity=".28"/>
+  <circle cx="1180" cy="400" r="160" fill="#f2b705"/>
+  <circle cx="1180" cy="400" r="118" fill="#ffd34d"/>
+  <g fill="#f3f6f1">
+    <rect x="1456" y="300" width="9" height="180" />
+    <g transform="translate(1460 300)"><path d="M0 0 L-6 -80 L6 -80 Z"/><path d="M0 0 L70 40 L64 50 Z"/><path d="M0 0 L-66 44 L-60 52 Z"/><circle r="9"/></g>
+    <rect x="1336" y="360" width="7" height="130" />
+    <g transform="translate(1340 360) scale(.7)"><path d="M0 0 L-6 -80 L6 -80 Z"/><path d="M0 0 L70 40 L64 50 Z"/><path d="M0 0 L-66 44 L-60 52 Z"/><circle r="9"/></g>
+  </g>
+  <path d="M0 545 C250 475 460 505 700 515 C900 523 1010 450 1200 495 C1350 528 1480 470 1600 480 V700 H0 Z" fill="#2f9e5e"/>
+  <path d="M0 610 C260 565 520 605 800 592 C1050 580 1300 612 1600 575 V700 H0 Z" fill="#1f7a4d"/>
+  <g transform="translate(900 380)">
+    <rect x="0" y="80" width="220" height="115" fill="#f3f6f1"/>
+    <polygon points="-18,84 110,0 238,84" fill="#d64533"/>
+    <polygon points="30,62 120,10 190,62" fill="#1d5fa8" stroke="#a9d0f2" stroke-width="4" stroke-linejoin="round"/>
+    <rect x="95" y="125" width="34" height="70" fill="#6b4a2f"/>
+    <rect x="25" y="112" width="44" height="40" fill="#a9d0f2"/><rect x="153" y="112" width="44" height="40" fill="#a9d0f2"/>
+  </g>
+  <g>
+    <rect x="1176" y="520" width="14" height="70" fill="#4b3220"/><circle cx="1183" cy="500" r="48" fill="#4fb36b"/><circle cx="1204" cy="520" r="30" fill="#2f9e5e"/>
+    <rect x="780" y="540" width="14" height="70" fill="#4b3220"/><circle cx="787" cy="520" r="44" fill="#6fcf8a"/><circle cx="806" cy="540" r="28" fill="#4fb36b"/>
+    <rect x="1400" y="540" width="14" height="70" fill="#4b3220"/><circle cx="1407" cy="518" r="52" fill="#6fcf8a"/><circle cx="1430" cy="540" r="32" fill="#4fb36b"/>
+  </g>
+  <path d="M0 640 C300 590 560 650 860 640 C1160 628 1400 600 1600 625 V700 H0 Z" fill="#f3f6f1"/>
+</svg>

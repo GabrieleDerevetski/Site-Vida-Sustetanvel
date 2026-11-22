@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<!--
+    Projeto: Vida Sustentável
+    Disciplina: Desenvolvimento Front-End para Web (DFEW.08) - Universidade Positivo
+    Equipe: Rafaela de Souza Tavares e Gabriele Derevetski Pereira
+    Arquivo: galeria.html
+    Descrição: galeria em CSS Grid, feita apenas com HTML, CSS e JavaScript puros (sem Bootstrap).
+-->
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Galeria de ilustrações sobre sustentabilidade com filtro por categoria.">
+    <title>Galeria | Vida Sustentável</title>
+    <link rel="icon" type="image/svg+xml" href="img/logo.svg">
+    <link rel="stylesheet" href="css/fontes.css">
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+    <a class="pular-conteudo" href="#conteudo">Pular para o conteúdo</a>
+    <nav class="menu-puro" aria-label="Menu principal">
+        <div class="barra">
+            <a class="marca" href="index.html">
+                <img src="img/logo.svg" width="40" height="40" alt="Logotipo Vida Sustentável">
+                <span>Vida Sustentável</span>
+            </a>
+            <button class="botao-menu" id="botao-menu" type="button" aria-controls="lista-menu" aria-expanded="false" aria-label="Abrir menu">&#9776;</button>
+            <ul class="lista-menu" id="lista-menu">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li class="tem-submenu">
+                    <a href="reciclagem.html">Temas &#9662;</a>
+                    <ul class="submenu">
+                            <li><a href="reciclagem.html">Reciclagem</a></li>
+                            <li><a href="energia.html">Energia</a></li>
+                            <li><a href="agua.html">Água</a></li>
+                            <li><a href="consumo.html">Consumo consciente</a></li>
+                    </ul>
+                </li>
+                <li><a href="galeria.html" aria-current="page">Galeria</a></li>
+                <li><a href="midia.html">Mídia</a></li>
+                <li><a href="checklist.html">Checklist</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="https://brasil.un.org/pt-br/sdgs" target="_blank" rel="noopener noreferrer">ODS (ONU) &#8599;</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main id="conteudo" class="container-puro">
+        <header class="cabecalho-pagina">
+            <h1>Galeria</h1>
+            <p>Ilustrações sobre os temas do projeto. Clique em uma imagem para ampliar.</p>
+        </header>
+
+        <section aria-label="Galeria de imagens">
+            <div class="filtros" role="group" aria-label="Filtrar imagens por categoria">
+                <button type="button" class="botao-puro ativo" data-filtro="todas" aria-pressed="true">Todas</button>
+                <button type="button" class="botao-puro" data-filtro="reciclagem" aria-pressed="false">Reciclagem</button>
+                <button type="button" class="botao-puro" data-filtro="energia" aria-pressed="false">Energia</button>
+                <button type="button" class="botao-puro" data-filtro="agua" aria-pressed="false">Água</button>
+                <button type="button" class="botao-puro" data-filtro="natureza" aria-pressed="false">Natureza</button>
+                <button type="button" class="botao-puro" data-filtro="mobilidade" aria-pressed="false">Mobilidade</button>
+            </div>
+
+            <div class="galeria">
+                <figure class="item-galeria" data-categoria="reciclagem">
+                    <img src="img/reciclagem.svg" alt="Lixeira verde com símbolo de reciclagem" loading="lazy">
+                    <figcaption>Lixeira da coleta seletiva</figcaption>
+                </figure>
+                <figure class="item-galeria" data-categoria="energia">
+                    <img src="img/energia.svg" alt="Lâmpada acesa com raios de luz" loading="lazy">
+                    <figcaption>Lâmpada eficiente</figcaption>
+                </figure>
+                <figure class="item-galeria" data-categoria="energia">
+                    <img src="img/solar.svg" alt="Painel solar sob o sol" loading="lazy">
+                    <figcaption>Painel de energia solar</figcaption>
+                </figure>
+                <figure class="item-galeria" data-categoria="agua">
+                    <img src="img/agua.svg" alt="Gota de água azul" loading="lazy">
+                    <figcaption>Cada gota conta</figcaption>
+                </figure>
+                <figure class="item-galeria" data-categoria="agua">
+                    <img src="img/chuva.svg" alt="Chuva caindo de uma nuvem em um reservatório" loading="lazy">
+                    <figcaption>Captação de água da chuva</figcaption>
+                </figure>
+                <figure class="item-galeria" data-categoria="natureza">
+                    <img src="img/horta.svg" alt="Planta crescendo em uma horta" loading="lazy">
+                    <figcaption>Horta caseira</figcaption>
+                </figure>
+                <figure class="item-galeria" data-categoria="natureza">
+                    <img src="img/arvore.svg" alt="Árvore frondosa" loading="lazy">
+                    <figcaption>Plantar árvores</figcaption>
+                </figure>
+                <figure class="item-galeria" data-categoria="mobilidade">
+                    <img src="img/bike.svg" alt="Bicicleta" loading="lazy">
+                    <figcaption>Pedalar é sustentável</figcaption>
+                </figure>
+                <figure class="item-galeria" data-categoria="natureza">
+                    <img src="img/planeta.svg" alt="Planeta Terra com continentes verdes" loading="lazy">
+                    <figcaption>Nosso planeta</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <dialog id="visualizador" aria-label="Imagem ampliada">
+            <img src="img/planeta.svg" alt="">
+            <p></p>
+            <button type="button" class="botao-puro" id="fechar-visualizador">Fechar</button>
+        </dialog>
+    </main>
+    <footer class="rodape">
+        <div class="colunas">
+            <div>
+                <h2>Vida Sustentável</h2>
+                <p>Site educativo sobre hábitos sustentáveis para o dia a dia, criado como projeto da disciplina Desenvolvimento Front-End para Web.</p>
+            </div>
+            <div>
+                <h2>Navegue</h2>
+                <ul>
+                    <li><a href="reciclagem.html">Reciclagem</a></li>
+                    <li><a href="energia.html">Energia</a></li>
+                    <li><a href="agua.html">Água</a></li>
+                    <li><a href="consumo.html">Consumo consciente</a></li>
+                    <li><a href="checklist.html">Checklist de hábitos</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2>Projeto</h2>
+                <p>Rafaela de Souza Tavares<br>Gabriele Derevetski Pereira<br>Análise e Desenvolvimento de Sistemas<br>Universidade Positivo</p>
+                <p><a href="https://www.w3.org/" target="_blank" rel="noopener noreferrer">W3C</a> | <a href="https://developer.mozilla.org/pt-BR/" target="_blank" rel="noopener noreferrer">MDN Web Docs</a></p>
+            </div>
+        </div>
+        <p class="direitos">&copy; <span id="ano-atual">2026</span> Vida Sustentável. Projeto acadêmico sem fins comerciais.</p>
+    </footer>
+    <script src="js/principal.js"></script>
+    <script src="js/galeria.js"></script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+/*
+    Projeto: Vida Sustentável
+    Disciplina: Desenvolvimento Front-End para Web (DFEW.08) - Universidade Positivo
+    Equipe: Rafaela de Souza Tavares e Gabriele Derevetski Pereira
+    Arquivo: css/fontes.css
+    Descrição: fontes do site, guardadas na pasta css/fonts para funcionar sem internet.
+    Bricolage Grotesque nos títulos e Figtree no texto corrido.
+*/
+
+@font-face {
+    font-family: "Bricolage Grotesque";
+    src: url("fonts/bricolage-grotesque-latin-wght-normal.woff2");
+    font-weight: 200 800;
+}
+
+@font-face {
+    font-family: "Figtree";
+    src: url("fonts/figtree-latin-wght-normal.woff2");
+    font-weight: 300 900;
+}

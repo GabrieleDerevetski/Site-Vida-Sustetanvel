@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-label="Lâmpada LED acesa com uma folha no lugar do filamento">
+  <rect width="800" height="600" fill="#fde08a"/>
+  <circle cx="400" cy="270" r="230" fill="#f2b705"/>
+  <circle cx="400" cy="270" r="170" fill="#ffd34d"/>
+  <g stroke="#e8782a" stroke-width="16" stroke-linecap="round">
+    <path d="M110 270 H70"/><path d="M730 270 H690"/>
+    <path d="M168 80 L142 54"/><path d="M632 80 L658 54"/>
+    <path d="M168 460 L142 486"/><path d="M632 460 L658 486"/>
+  </g>
+  <path d="M400 110 C310 110 255 175 255 250 C255 305 285 335 310 370 C325 392 328 405 328 425 H472 C472 405 475 392 490 370 C515 335 545 305 545 250 C545 175 490 110 400 110 Z" fill="#fff6cf" stroke="#123d33" stroke-width="14" stroke-linejoin="round"/>
+  <path d="M400 395 V300" stroke="#123d33" stroke-width="12" stroke-linecap="round"/>
+  <path d="M400 330 C350 330 322 295 320 245 C372 248 400 280 400 330 Z" fill="#2f9e5e"/>
+  <path d="M400 300 C450 298 478 262 480 212 C428 216 400 250 400 300 Z" fill="#1f7a4d"/>
+  <path d="M400 395 V300" stroke="#123d33" stroke-width="12" stroke-linecap="round"/>
+  <rect x="318" y="425" width="164" height="30" rx="10" fill="#123d33"/>
+  <rect x="326" y="460" width="148" height="30" rx="10" fill="#2a5a4c"/>
+  <rect x="334" y="495" width="132" height="30" rx="10" fill="#123d33"/>
+  <path d="M365 525 H435 a10 10 0 0 1 -10 24 h-50 a10 10 0 0 1 -10 -24 z" fill="#2a5a4c"/>
+</svg>

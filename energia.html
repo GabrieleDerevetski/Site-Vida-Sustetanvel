@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<!--
+    Projeto: Vida Sustentável
+    Disciplina: Desenvolvimento Front-End para Web (DFEW.08) - Universidade Positivo
+    Equipe: Rafaela de Souza Tavares e Gabriele Derevetski Pereira
+    Arquivo: energia.html
+    Descrição: página de energia com dicas, tabela de consumo e calculadoras.
+-->
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Dicas, tabela de consumo e calculadoras para economizar energia elétrica.">
+    <title>Energia | Vida Sustentável</title>
+    <link rel="icon" type="image/svg+xml" href="img/logo.svg">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/fontes.css">
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body class="tema-energia">
+    <a class="pular-conteudo" href="#conteudo">Pular para o conteúdo</a>
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-vida sticky-top" aria-label="Menu principal">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img class="logo-menu" src="img/logo.svg" alt="Logotipo Vida Sustentável">
+                <span>Vida Sustentável</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menuPrincipal">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Temas</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="reciclagem.html">Reciclagem</a></li>
+                            <li><a class="dropdown-item active" href="energia.html">Energia</a></li>
+                            <li><a class="dropdown-item" href="agua.html">Água</a></li>
+                            <li><a class="dropdown-item" href="consumo.html">Consumo consciente</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="galeria.html">Galeria</a></li>
+                    <li class="nav-item"><a class="nav-link" href="midia.html">Mídia</a></li>
+                    <li class="nav-item"><a class="nav-link" href="checklist.html">Checklist</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://brasil.un.org/pt-br/sdgs" target="_blank" rel="noopener noreferrer">ODS (ONU) &#8599;</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main id="conteudo" class="container pb-4">
+        <header class="cabecalho-pagina">
+            <div>
+                <h1>Energia</h1>
+                <p>Economizar energia reduz a conta de luz e diminui a pressão sobre os recursos naturais.</p>
+            </div>
+            <img class="selo" src="img/energia.svg" alt="Lâmpada com uma folha">
+        </header>
+
+        <section class="secao" aria-labelledby="titulo-dicas-energia">
+            <h2 id="titulo-dicas-energia">Dicas rápidas</h2>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <article class="card cartao-tema">
+                        <img src="img/energia.svg" class="card-img-top" alt="Lâmpada acesa">
+                        <div class="card-body">
+                            <h3 class="card-title h5">Troque por LED</h3>
+                            <p class="card-text">Lâmpadas LED consomem muito menos energia que as incandescentes e duram bem mais.</p>
+                        </div>
+                    </article>
+                </div>
+                <div class="col">
+                    <article class="card cartao-tema">
+                        <img src="img/solar.svg" class="card-img-top" alt="Painel solar sob o sol">
+                        <div class="card-body">
+                            <h3 class="card-title h5">Pense na energia solar</h3>
+                            <p class="card-text">Painéis solares transformam luz do sol em eletricidade e podem reduzir a conta com o tempo.</p>
+                        </div>
+                    </article>
+                </div>
+                <div class="col">
+                    <article class="card cartao-tema">
+                        <img src="img/bike.svg" class="card-img-top" alt="Bicicleta">
+                        <div class="card-body">
+                            <h3 class="card-title h5">Evite o desperdício</h3>
+                            <p class="card-text">Desligue aparelhos da tomada, use a luz natural e prefira o ventilador ao ar-condicionado quando possível.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="secao" aria-labelledby="titulo-tabela-energia">
+            <h2 id="titulo-tabela-energia">Quanto cada aparelho consome?</h2>
+            <div class="table-responsive tabela-vida">
+                <table class="table table-hover align-middle mb-0">
+                    <caption class="p-3">Exemplos de consumo mensal para 30 dias de uso. Valores calculados a partir da potência média e do tempo diário de uso.</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Aparelho</th>
+                            <th scope="col">Potência média</th>
+                            <th scope="col">Uso por dia</th>
+                            <th scope="col">Consumo no mês</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><th scope="row">Chuveiro elétrico</th><td>5.500 W</td><td>30 min</td><td>82,5 kWh</td></tr>
+                        <tr><th scope="row">Lâmpada incandescente</th><td>60 W</td><td>5 h</td><td>9 kWh</td></tr>
+                        <tr><th scope="row">Lâmpada LED</th><td>9 W</td><td>5 h</td><td>1,35 kWh</td></tr>
+                        <tr><th scope="row">Televisão</th><td>100 W</td><td>5 h</td><td>15 kWh</td></tr>
+                        <tr><th scope="row">Ventilador</th><td>80 W</td><td>8 h</td><td>19,2 kWh</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="secao" aria-labelledby="titulo-calc-energia">
+            <h2 id="titulo-calc-energia">Calculadoras</h2>
+            <div class="row g-4">
+                <div class="col-lg-6">
+                    <form class="formulario-vida" id="form-energia">
+                        <h3 class="h5">Consumo de um aparelho</h3>
+                        <div class="mb-3">
+                            <label for="potencia" class="form-label">Potência (W)</label>
+                            <input type="number" class="form-control" id="potencia" min="1" max="20000" placeholder="Ex.: 100" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="horas-dia" class="form-label">Horas de uso por dia</label>
+                            <input type="number" class="form-control" id="horas-dia" min="0.1" max="24" step="0.1" placeholder="Ex.: 5" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="dias-mes" class="form-label">Dias de uso no mês</label>
+                            <input type="number" class="form-control" id="dias-mes" min="1" max="31" value="30" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="tarifa" class="form-label">Tarifa (R$ por kWh)</label>
+                            <input type="number" class="form-control" id="tarifa" min="0.1" max="5" step="0.01" value="0.95" required>
+                            <div class="form-text">Confira o valor na sua conta de luz.</div>
+                        </div>
+                        <button type="submit" class="btn btn-success">Calcular</button>
+                        <div id="resultado-energia" role="status" aria-live="polite"></div>
+                    </form>
+                </div>
+                <div class="col-lg-6">
+                    <form class="formulario-vida" id="form-led">
+                        <h3 class="h5">Economia ao trocar por LED</h3>
+                        <p class="small text-secondary">Compara lâmpadas incandescentes de 60 W com LED de 9 W.</p>
+                        <div class="mb-3">
+                            <label for="qtd-lampadas" class="form-label">Quantidade de lâmpadas</label>
+                            <input type="number" class="form-control" id="qtd-lampadas" min="1" max="200" placeholder="Ex.: 8" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="horas-lampada" class="form-label">Horas acesas por dia</label>
+                            <input type="number" class="form-control" id="horas-lampada" min="0.5" max="24" step="0.5" placeholder="Ex.: 5" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="tarifa-led" class="form-label">Tarifa (R$ por kWh)</label>
+                            <input type="number" class="form-control" id="tarifa-led" min="0.1" max="5" step="0.01" value="0.95" required>
+                        </div>
+                        <button type="submit" class="btn btn-success">Calcular economia</button>
+                        <div id="resultado-led" role="status" aria-live="polite"></div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="rodape">
+        <div class="colunas">
+            <div>
+                <h2>Vida Sustentável</h2>
+                <p>Site educativo sobre hábitos sustentáveis para o dia a dia, criado como projeto da disciplina Desenvolvimento Front-End para Web.</p>
+            </div>
+            <div>
+                <h2>Navegue</h2>
+                <ul>
+                    <li><a href="reciclagem.html">Reciclagem</a></li>
+                    <li><a href="energia.html">Energia</a></li>
+                    <li><a href="agua.html">Água</a></li>
+                    <li><a href="consumo.html">Consumo consciente</a></li>
+                    <li><a href="checklist.html">Checklist de hábitos</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2>Projeto</h2>
+                <p>Rafaela de Souza Tavares<br>Gabriele Derevetski Pereira<br>Análise e Desenvolvimento de Sistemas<br>Universidade Positivo</p>
+                <p><a href="https://www.w3.org/" target="_blank" rel="noopener noreferrer">W3C</a> | <a href="https://developer.mozilla.org/pt-BR/" target="_blank" rel="noopener noreferrer">MDN Web Docs</a></p>
+            </div>
+        </div>
+        <p class="direitos">&copy; <span id="ano-atual">2026</span> Vida Sustentável. Projeto acadêmico sem fins comerciais.</p>
+    </footer>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/principal.js"></script>
+    <script src="js/calculadoras.js"></script>
+</body>
+</html>
